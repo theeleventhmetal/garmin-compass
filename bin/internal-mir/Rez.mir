@@ -1,0 +1,1880 @@
+[ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [id_monkey,9,27,36]; @symbol_type<0> = [ResourceId,9,40,50]; ]
+        var id_monkey as ResourceId;
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 10; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,10,27,39]; @symbol_type<0> = [ResourceId,10,43,53]; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 13; @symbol_moduledef = [Layouts,13,11,18]; ]
+    module Layouts {
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 13; ]
+        <init> {
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 14; @symbol_functiondef = [MainLayout,14,17,27]; @symbol_param<0> = [dc,14,28,30]; @symbol_param<0>_type<0> = [Graphics,14,34,42]; @symbol_param<0>_type<1> = [Dc,14,43,45]; @symbol_return<0> = [Array,14,50,55]; @symbol_return<1> = [WatchUi,14,56,63]; @symbol_return<2> = [Drawable,14,64,72]; ]
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_jackhillman_source_garmin_Compass_compass_bin_gen_006_B4155_00_source_Rez_mcgen_14_74_23_8_start:
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 15 12 ]
+            [ "_Users_jackhillman_source_garmin_Compass_compass_bin_gen_006_B4155_00_source_Rez_mcgen_14_74_23_8_start" "_Users_jackhillman_source_garmin_Compass_compass_bin_gen_006_B4155_00_source_Rez_mcgen_14_74_23_8_stop" ]
+            %rez_cmp_local_var_dc_getWidth.1 = local;
+            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.1 15 16 45 ];
+            %tmp.1 = lgetv %dc;
+            symbol [ dc %tmp.1 15 48 50 ];
+            symbol [ getWidth %tmp.2 15 51 59 ];
+            %tmp.2 = getv function %tmp.1 :getWidth;
+            %tmp.3 = invoke %tmp.1 %tmp.2();
+            lputv %rez_cmp_local_var_dc_getWidth.1 %tmp.3;
+            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.1 15 16 45 ];
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 17 12 ]
+            [ "_Users_jackhillman_source_garmin_Compass_compass_bin_gen_006_B4155_00_source_Rez_mcgen_14_74_23_8_start" "_Users_jackhillman_source_garmin_Compass_compass_bin_gen_006_B4155_00_source_Rez_mcgen_14_74_23_8_stop" ]
+            %rez_cmp_local_text_1193959466.2 = local;
+            symbol [ rez_cmp_local_text_1193959466 %rez_cmp_local_text_1193959466.2 17 16 45 ];
+            symbol [ WatchUi %tmp.6 17 52 59 ];
+            %tmp.6 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.7 17 60 64 ];
+            %tmp.7 = getv function ? %tmp.6 :Text;
+            %tmp.8 = newd 6;
+            %tmp.10 = const :color;
+            symbol [ color %tmp.10 17 67 72 const ];
+            symbol [ Graphics %tmp.11 17 74 82 ];
+            %tmp.11 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.12 17 83 94 ];
+            %tmp.12 = getv %tmp.11 :COLOR_WHITE;
+            %tmp.13 = dup %tmp.8;
+            %tmp.14 = aputv %tmp.13 %tmp.10 %tmp.12;
+            %tmp.16 = const :locX;
+            symbol [ locX %tmp.16 17 97 101 const ];
+            %tmp.17 = lgetv %rez_cmp_local_var_dc_getWidth.1;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.17 17 104 133 ];
+            %tmp.18 = 0.5;
+            %tmp.19 = mul %tmp.17 %tmp.18;
+            %tmp.20 = dup %tmp.14;
+            %tmp.21 = aputv %tmp.20 %tmp.16 %tmp.19;
+            %tmp.23 = const :locY;
+            symbol [ locY %tmp.23 17 143 147 const ];
+            %tmp.24 = 5;
+            %tmp.25 = dup %tmp.21;
+            %tmp.26 = aputv %tmp.25 %tmp.23 %tmp.24;
+            %tmp.28 = const :text;
+            symbol [ text %tmp.28 17 153 157 const ];
+            symbol [ $ %tmp.29 17 159 160 ];
+            %tmp.29 = getm $;
+            symbol [ Rez %tmp.30 17 161 164 ];
+            %tmp.30 = getv %tmp.29 :Rez;
+            symbol [ Strings %tmp.31 17 165 172 ];
+            %tmp.31 = getv %tmp.30 :Strings;
+            symbol [ prompt %tmp.32 17 173 179 ];
+            %tmp.32 = getv %tmp.31 :prompt;
+            %tmp.33 = dup %tmp.26;
+            %tmp.34 = aputv %tmp.33 %tmp.28 %tmp.32;
+            %tmp.36 = const :justification;
+            symbol [ justification %tmp.36 17 182 195 const ];
+            symbol [ Graphics %tmp.37 17 197 205 ];
+            %tmp.37 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.38 17 206 225 ];
+            %tmp.38 = getv %tmp.37 :TEXT_JUSTIFY_CENTER;
+            %tmp.39 = dup %tmp.34;
+            %tmp.40 = aputv %tmp.39 %tmp.36 %tmp.38;
+            %tmp.42 = const :font;
+            symbol [ font %tmp.42 17 228 232 const ];
+            symbol [ Graphics %tmp.43 17 234 242 ];
+            %tmp.43 = getm $.Toybox.Graphics;
+            symbol [ FONT_MEDIUM %tmp.44 17 243 254 ];
+            %tmp.44 = getv %tmp.43 :FONT_MEDIUM;
+            %tmp.45 = dup %tmp.40;
+            %tmp.46 = aputv %tmp.45 %tmp.42 %tmp.44;
+            %tmp.4 = newc %tmp.7 (%tmp.46);
+            lputv %rez_cmp_local_text_1193959466.2 %tmp.4;
+            symbol [ rez_cmp_local_text_1193959466 %rez_cmp_local_text_1193959466.2 17 16 45 ];
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 19 12 ]
+            [ "_Users_jackhillman_source_garmin_Compass_compass_bin_gen_006_B4155_00_source_Rez_mcgen_14_74_23_8_start" "_Users_jackhillman_source_garmin_Compass_compass_bin_gen_006_B4155_00_source_Rez_mcgen_14_74_23_8_stop" ]
+            %rez_cmp_local_bitmap_id_monkey.3 = local;
+            symbol [ rez_cmp_local_bitmap_id_monkey %rez_cmp_local_bitmap_id_monkey.3 19 16 46 ];
+            symbol [ WatchUi %tmp.49 19 53 60 ];
+            %tmp.49 = getm $.Toybox.WatchUi;
+            symbol [ Bitmap %tmp.50 19 61 67 ];
+            %tmp.50 = getv function ? %tmp.49 :Bitmap;
+            %tmp.51 = newd 4;
+            %tmp.53 = const :identifier;
+            symbol [ identifier %tmp.53 19 70 80 const ];
+            %tmp.54 = "id_monkey";
+            %tmp.55 = dup %tmp.51;
+            %tmp.56 = aputv %tmp.55 %tmp.53 %tmp.54;
+            %tmp.58 = const :rezId;
+            symbol [ rezId %tmp.58 19 96 101 const ];
+            symbol [ $ %tmp.59 19 103 104 ];
+            %tmp.59 = getm $;
+            symbol [ Rez %tmp.60 19 105 108 ];
+            %tmp.60 = getv %tmp.59 :Rez;
+            symbol [ Drawables %tmp.61 19 109 118 ];
+            %tmp.61 = getv %tmp.60 :Drawables;
+            symbol [ id_monkey %tmp.62 19 119 128 ];
+            %tmp.62 = getv %tmp.61 :id_monkey;
+            %tmp.63 = dup %tmp.56;
+            %tmp.64 = aputv %tmp.63 %tmp.58 %tmp.62;
+            %tmp.66 = const :locX;
+            symbol [ locX %tmp.66 19 131 135 const ];
+            symbol [ WatchUi %tmp.67 19 137 144 ];
+            %tmp.67 = getm $.Toybox.WatchUi;
+            symbol [ LAYOUT_HALIGN_CENTER %tmp.68 19 145 165 ];
+            %tmp.68 = getv %tmp.67 :LAYOUT_HALIGN_CENTER;
+            %tmp.69 = dup %tmp.64;
+            %tmp.70 = aputv %tmp.69 %tmp.66 %tmp.68;
+            %tmp.72 = const :locY;
+            symbol [ locY %tmp.72 19 168 172 const ];
+            %tmp.73 = 30;
+            %tmp.74 = dup %tmp.70;
+            %tmp.75 = aputv %tmp.74 %tmp.72 %tmp.73;
+            %tmp.47 = newc %tmp.50 (%tmp.75);
+            lputv %rez_cmp_local_bitmap_id_monkey.3 %tmp.47;
+            symbol [ rez_cmp_local_bitmap_id_monkey %rez_cmp_local_bitmap_id_monkey.3 19 16 46 ];
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 20 12 ]
+            %tmp.76 = lgetv %rez_cmp_local_bitmap_id_monkey.3;
+            symbol [ rez_cmp_local_bitmap_id_monkey %tmp.76 20 12 42 ];
+            symbol [ setLocation %tmp.77 20 43 54 ];
+            %tmp.77 = getv function %tmp.76 :setLocation;
+            %tmp.78 = lgetv %rez_cmp_local_var_dc_getWidth.1;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.78 20 57 86 ];
+            %tmp.79 = lgetv %rez_cmp_local_bitmap_id_monkey.3;
+            symbol [ rez_cmp_local_bitmap_id_monkey %tmp.79 20 89 119 ];
+            symbol [ width %tmp.80 20 120 125 ];
+            %tmp.80 = getv %tmp.79 :width;
+            %tmp.81 = sub %tmp.78 %tmp.80;
+            %tmp.82 = 0.5;
+            %tmp.83 = mul %tmp.81 %tmp.82;
+            %tmp.84 = lgetv %rez_cmp_local_bitmap_id_monkey.3;
+            symbol [ rez_cmp_local_bitmap_id_monkey %tmp.84 20 135 165 ];
+            symbol [ locY %tmp.85 20 166 170 ];
+            %tmp.85 = getv %tmp.84 :locY;
+            invoke %tmp.76 %tmp.77(%tmp.83, %tmp.85);
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 22 12 ]
+            %tmp.86 = newa 2 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.86 22 86 91 ];
+            symbol [ WatchUi %tmp.86 22 92 99 ];
+            symbol [ Drawable %tmp.86 22 100 108 ];
+            %tmp.87 = lgetv %rez_cmp_local_text_1193959466.2;
+            symbol [ rez_cmp_local_text_1193959466 %tmp.87 22 20 49 ];
+            %tmp.88 = dup %tmp.86;
+            %tmp.89 = aputv %tmp.88 0 %tmp.87;
+            %tmp.90 = lgetv %rez_cmp_local_bitmap_id_monkey.3;
+            symbol [ rez_cmp_local_bitmap_id_monkey %tmp.90 22 51 81 ];
+            %tmp.91 = dup %tmp.89;
+            %tmp.92 = aputv %tmp.91 1 %tmp.90;
+            ret %tmp.92;
+_Users_jackhillman_source_garmin_Compass_compass_bin_gen_006_B4155_00_source_Rez_mcgen_14_74_23_8_stop:
+        }
+    }
+    [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 26; @symbol_moduledef = [Menus,26,11,16]; ]
+    module Menus {
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 26; ]
+        <init> {
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 27; @symbol_classdef = [MainMenu,27,14,22]; @symbol_extends<0> = [WatchUi,27,31,38]; @symbol_extends<1> = [Menu,27,39,43]; ]
+        class MainMenu extends WatchUi.Menu {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 27; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 27; ]
+            static
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 28; @symbol_functiondef = [initialize,28,21,31]; ]
+            function initialize() as Void {
+_Users_jackhillman_source_garmin_Compass_compass_bin_gen_006_B4155_00_source_Rez_mcgen_28_34_32_12_start:
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 29 16 ]
+                symbol [ Menu %tmp.2 29 16 20 ];
+                %tmp.2 = getv ? :Menu;
+                symbol [ initialize %tmp.3 29 21 31 ];
+                %tmp.3 = getv function %tmp.2 :initialize;
+                invoke %tmp.2 %tmp.3();
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 30 16 ]
+                %tmp.4 = self;
+                symbol [ addItem %tmp.5 30 16 23 ];
+                %tmp.5 = getv function %tmp.4 :addItem;
+                symbol [ WatchUi %tmp.6 30 25 32 ];
+                %tmp.6 = getm $.Toybox.WatchUi;
+                symbol [ loadResource %tmp.7 30 33 45 ];
+                %tmp.7 = getv function %tmp.6 :loadResource;
+                symbol [ $ %tmp.8 30 46 47 ];
+                %tmp.8 = getm $;
+                symbol [ Rez %tmp.9 30 48 51 ];
+                %tmp.9 = getv %tmp.8 :Rez;
+                symbol [ Strings %tmp.10 30 52 59 ];
+                %tmp.10 = getv %tmp.9 :Strings;
+                symbol [ menu_label_1 %tmp.11 30 60 72 ];
+                %tmp.11 = getv %tmp.10 :menu_label_1;
+                %tmp.12 = invoke %tmp.6 %tmp.7(%tmp.11);
+                %tmp.13 = as %tmp.12 String;
+                symbol [ String %tmp.13 30 77 83 ];
+                %tmp.15 = const :item_1;
+                symbol [ item_1 %tmp.15 30 87 93 const ];
+                invoke %tmp.4 %tmp.5(%tmp.13, %tmp.15);
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 31 16 ]
+                %tmp.16 = self;
+                symbol [ addItem %tmp.17 31 16 23 ];
+                %tmp.17 = getv function %tmp.16 :addItem;
+                symbol [ WatchUi %tmp.18 31 25 32 ];
+                %tmp.18 = getm $.Toybox.WatchUi;
+                symbol [ loadResource %tmp.19 31 33 45 ];
+                %tmp.19 = getv function %tmp.18 :loadResource;
+                symbol [ $ %tmp.20 31 46 47 ];
+                %tmp.20 = getm $;
+                symbol [ Rez %tmp.21 31 48 51 ];
+                %tmp.21 = getv %tmp.20 :Rez;
+                symbol [ Strings %tmp.22 31 52 59 ];
+                %tmp.22 = getv %tmp.21 :Strings;
+                symbol [ menu_label_2 %tmp.23 31 60 72 ];
+                %tmp.23 = getv %tmp.22 :menu_label_2;
+                %tmp.24 = invoke %tmp.18 %tmp.19(%tmp.23);
+                %tmp.25 = as %tmp.24 String;
+                symbol [ String %tmp.25 31 77 83 ];
+                %tmp.27 = const :item_2;
+                symbol [ item_2 %tmp.27 31 87 93 const ];
+                invoke %tmp.16 %tmp.17(%tmp.25, %tmp.27);
+_Users_jackhillman_source_garmin_Compass_compass_bin_gen_006_B4155_00_source_Rez_mcgen_28_34_32_12_stop:
+            }
+        }
+    }
+    [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 36; @symbol_moduledef = [Strings,36,11,18]; ]
+    module Strings {
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 36; ]
+        <init> {
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 37; @position = 27; initialized = true; @symbol_vardef = [menu_label_1,37,27,39]; @symbol_type<0> = [ResourceId,37,43,53]; ]
+        var menu_label_1 as ResourceId;
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 38; @position = 27; initialized = true; @symbol_vardef = [menu_label_2,38,27,39]; @symbol_type<0> = [ResourceId,38,43,53]; ]
+        var menu_label_2 as ResourceId;
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 39; @position = 27; initialized = true; @symbol_vardef = [prompt,39,27,33]; @symbol_type<0> = [ResourceId,39,37,47]; ]
+        var prompt as ResourceId;
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 40; @position = 27; initialized = true; @symbol_vardef = [AppName,40,27,34]; @symbol_type<0> = [ResourceId,40,38,48]; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 43; @symbol_moduledef = [Styles,43,11,17]; ]
+    module Styles {
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 43; ]
+        <init> {
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 44; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,44,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 44; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 45; @position = 18; @symbol_constdef = [exclude,45,18,25]; @symbol_type<0> = [Boolean,45,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 48; @symbol_moduledef = [system_size__menu_header,48,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 48; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 49; @position = 18; @symbol_constdef = [width,49,18,23]; @symbol_type<0> = [Number,49,27,33]; ]
+            const width as Number = 176;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 50; @position = 18; @symbol_constdef = [height,50,18,24]; @symbol_type<0> = [Number,50,28,34]; ]
+            const height as Number = 54;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 53; @symbol_moduledef = [system_loc__hint_button_left_bottom,53,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 53; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 54; @position = 18; @symbol_constdef = [x,54,18,19]; @symbol_type<0> = [Number,54,23,29]; ]
+            const x as Number = 10;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 55; @position = 18; @symbol_constdef = [y,55,18,19]; @symbol_type<0> = [Number,55,23,29]; ]
+            const y as Number = 134;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 56; @position = 18; @symbol_constdef = [horizontalJustification,56,18,41]; @symbol_type<0> = [String,56,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 57; @position = 18; @symbol_constdef = [verticalJustification,57,18,39]; @symbol_type<0> = [String,57,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 60; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,60,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 60; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 61; @position = 18; @symbol_constdef = [exclude,61,18,25]; @symbol_type<0> = [Boolean,61,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 64; @symbol_moduledef = [prompt_loc__body_no_title,64,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 64; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 65; @position = 18; @symbol_constdef = [x,65,18,19]; @symbol_type<0> = [Number,65,23,29]; ]
+            const x as Number = 29;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 66; @position = 18; @symbol_constdef = [y,66,18,19]; @symbol_type<0> = [Number,66,23,29]; ]
+            const y as Number = 12;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 69; @symbol_moduledef = [system_icon_dark__about,69,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 69; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 70; @position = 18; @symbol_constdef = [filename,70,18,26]; @symbol_type<0> = [String,70,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_dark__about.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 71; @position = 18; @symbol_constdef = [disableTransparency,71,18,37]; @symbol_type<0> = [Boolean,71,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 72; @position = 18; @symbol_constdef = [dithering,72,18,27]; @symbol_type<0> = [String,72,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 73; @position = 18; @symbol_constdef = [automaticPalette,73,18,34]; @symbol_type<0> = [Boolean,73,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 76; @symbol_moduledef = [system_icon_light__question,76,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 76; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 77; @position = 18; @symbol_constdef = [filename,77,18,26]; @symbol_type<0> = [String,77,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_light__question.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 78; @position = 18; @symbol_constdef = [disableTransparency,78,18,37]; @symbol_type<0> = [Boolean,78,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 79; @position = 18; @symbol_constdef = [dithering,79,18,27]; @symbol_type<0> = [String,79,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 80; @position = 18; @symbol_constdef = [automaticPalette,80,18,34]; @symbol_type<0> = [Boolean,80,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 83; @symbol_moduledef = [system_loc__hint_button_left_top,83,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 83; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 84; @position = 18; @symbol_constdef = [exclude,84,18,25]; @symbol_type<0> = [Boolean,84,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 87; @symbol_moduledef = [prompt_font__title,87,15,33]; ]
+        module prompt_font__title {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 87; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 88 18 ]
+                symbol [ Graphics %tmp.28 88 34 42 ];
+                %tmp.28 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.29 88 43 62 ];
+                %tmp.29 = getv %tmp.28 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.30 88 63 71 ];
+                %tmp.30 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.31 88 72 92 ];
+                %tmp.31 = getv %tmp.30 :TEXT_JUSTIFY_VCENTER;
+                %tmp.32 = bitor %tmp.29 %tmp.31;
+                putv self :justification %tmp.32;
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 89 18 ]
+                symbol [ Graphics %tmp.33 89 25 33 ];
+                %tmp.33 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.34 89 34 43 ];
+                %tmp.34 = getv %tmp.33 :FONT_TINY;
+                putv self :font %tmp.34;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 88; @position = 18; @symbol_constdef = [justification,88,18,31]; ]
+            const justification;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 89; @position = 18; @symbol_constdef = [font,89,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 92; @symbol_moduledef = [system_icon_dark__discard,92,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 92; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 93; @position = 18; @symbol_constdef = [filename,93,18,26]; @symbol_type<0> = [String,93,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_dark__discard.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 94; @position = 18; @symbol_constdef = [disableTransparency,94,18,37]; @symbol_type<0> = [Boolean,94,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 95; @position = 18; @symbol_constdef = [dithering,95,18,27]; @symbol_type<0> = [String,95,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 96; @position = 18; @symbol_constdef = [automaticPalette,96,18,34]; @symbol_type<0> = [Boolean,96,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 99; @symbol_moduledef = [system_size__menu_item,99,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 99; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 100; @position = 18; @symbol_constdef = [width,100,18,23]; @symbol_type<0> = [Number,100,27,33]; ]
+            const width as Number = 176;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 101; @position = 18; @symbol_constdef = [height,101,18,24]; @symbol_type<0> = [Number,101,28,34]; ]
+            const height as Number = 54;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 104; @symbol_moduledef = [system_color_dark__text,104,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 104; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 106 18 ]
+                symbol [ Graphics %tmp.35 106 31 39 ];
+                %tmp.35 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.36 106 40 57 ];
+                %tmp.36 = getv %tmp.35 :COLOR_TRANSPARENT;
+                putv self :background %tmp.36;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 105; @position = 18; @symbol_constdef = [color,105,18,23]; @symbol_type<0> = [Number,105,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 106; @position = 18; @symbol_constdef = [background,106,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 109; @symbol_moduledef = [system_icon_destructive__discard,109,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 109; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 110; @position = 18; @symbol_constdef = [filename,110,18,26]; @symbol_type<0> = [String,110,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_dark__discard.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 111; @position = 18; @symbol_constdef = [disableTransparency,111,18,37]; @symbol_type<0> = [Boolean,111,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 112; @position = 18; @symbol_constdef = [dithering,112,18,27]; @symbol_type<0> = [String,112,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 113; @position = 18; @symbol_constdef = [automaticPalette,113,18,34]; @symbol_type<0> = [Boolean,113,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 116; @symbol_moduledef = [system_icon_dark__hint_action_menu,116,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 116; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 117; @position = 18; @symbol_constdef = [filename,117,18,26]; @symbol_type<0> = [String,117,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 118; @position = 18; @symbol_constdef = [disableTransparency,118,18,37]; @symbol_type<0> = [Boolean,118,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 119; @position = 18; @symbol_constdef = [dithering,119,18,27]; @symbol_type<0> = [String,119,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 120; @position = 18; @symbol_constdef = [automaticPalette,120,18,34]; @symbol_type<0> = [Boolean,120,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 123; @symbol_moduledef = [prompt_size__title,123,15,33]; ]
+        module prompt_size__title {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 123; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 124; @position = 18; @symbol_constdef = [width,124,18,23]; @symbol_type<0> = [Number,124,27,33]; ]
+            const width as Number = 118;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 125; @position = 18; @symbol_constdef = [height,125,18,24]; @symbol_type<0> = [Number,125,28,34]; ]
+            const height as Number = 54;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 128; @symbol_moduledef = [confirmation_font__body,128,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 128; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 129 18 ]
+                symbol [ Graphics %tmp.37 129 34 42 ];
+                %tmp.37 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.38 129 43 62 ];
+                %tmp.38 = getv %tmp.37 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.39 129 63 71 ];
+                %tmp.39 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.40 129 72 92 ];
+                %tmp.40 = getv %tmp.39 :TEXT_JUSTIFY_VCENTER;
+                %tmp.41 = bitor %tmp.38 %tmp.40;
+                putv self :justification %tmp.41;
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 130 18 ]
+                symbol [ Graphics %tmp.42 130 25 33 ];
+                %tmp.42 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.43 130 34 43 ];
+                %tmp.43 = getv %tmp.42 :FONT_TINY;
+                putv self :font %tmp.43;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 129; @position = 18; @symbol_constdef = [justification,129,18,31]; ]
+            const justification;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 130; @position = 18; @symbol_constdef = [font,130,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 133; @symbol_moduledef = [system_color_dark__background,133,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 133; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 134; @position = 18; @symbol_constdef = [color,134,18,23]; @symbol_type<0> = [Number,134,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 135; @position = 18; @symbol_constdef = [background,135,18,28]; @symbol_type<0> = [Number,135,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 138; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,138,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 138; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 139; @position = 18; @symbol_constdef = [exclude,139,18,25]; @symbol_type<0> = [Boolean,139,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 142; @symbol_moduledef = [system_size__launch_icon,142,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 142; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 143; @position = 18; @symbol_constdef = [scaleX,143,18,24]; @symbol_type<0> = [Number,143,28,34]; ]
+            const scaleX as Number = 26;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 144; @position = 18; @symbol_constdef = [scaleY,144,18,24]; @symbol_type<0> = [Number,144,28,34]; ]
+            const scaleY as Number = 26;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 145; @position = 18; @symbol_constdef = [scaleRelativeTo,145,18,33]; @symbol_type<0> = [String,145,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 148; @symbol_moduledef = [confirmation_input__confirm,148,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 148; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 149 18 ]
+                symbol [ WatchUi %tmp.44 149 27 34 ];
+                %tmp.44 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.45 149 35 44 ];
+                %tmp.45 = getv %tmp.44 :KEY_ENTER;
+                putv self :button %tmp.45;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 149; @position = 18; @symbol_constdef = [button,149,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 152; @symbol_moduledef = [prompt_font__body_with_title,152,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 152; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 153 18 ]
+                symbol [ Graphics %tmp.46 153 34 42 ];
+                %tmp.46 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.47 153 43 62 ];
+                %tmp.47 = getv %tmp.46 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.48 153 63 71 ];
+                %tmp.48 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.49 153 72 92 ];
+                %tmp.49 = getv %tmp.48 :TEXT_JUSTIFY_VCENTER;
+                %tmp.50 = bitor %tmp.47 %tmp.49;
+                putv self :justification %tmp.50;
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 154 18 ]
+                symbol [ Graphics %tmp.51 154 25 33 ];
+                %tmp.51 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.52 154 34 44 ];
+                %tmp.52 = getv %tmp.51 :FONT_XTINY;
+                putv self :font %tmp.52;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 153; @position = 18; @symbol_constdef = [justification,153,18,31]; ]
+            const justification;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 154; @position = 18; @symbol_constdef = [font,154,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 157; @symbol_moduledef = [confirmation_loc__body,157,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 157; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 158; @position = 18; @symbol_constdef = [x,158,18,19]; @symbol_type<0> = [Number,158,23,29]; ]
+            const x as Number = 29;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 159; @position = 18; @symbol_constdef = [y,159,18,19]; @symbol_type<0> = [Number,159,23,29]; ]
+            const y as Number = 12;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 162; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,162,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 162; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 163; @position = 18; @symbol_constdef = [filename,163,18,26]; @symbol_type<0> = [String,163,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_destructive__hint_button_left_bottom.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 164; @position = 18; @symbol_constdef = [disableTransparency,164,18,37]; @symbol_type<0> = [Boolean,164,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 165; @position = 18; @symbol_constdef = [dithering,165,18,27]; @symbol_type<0> = [String,165,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 166; @position = 18; @symbol_constdef = [automaticPalette,166,18,34]; @symbol_type<0> = [Boolean,166,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 169; @symbol_moduledef = [prompt_color_dark__background,169,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 169; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 170; @position = 18; @symbol_constdef = [background,170,18,28]; @symbol_type<0> = [Number,170,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 173; @symbol_moduledef = [system_icon_destructive__hint_action_menu,173,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 173; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 174; @position = 18; @symbol_constdef = [filename,174,18,26]; @symbol_type<0> = [String,174,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 175; @position = 18; @symbol_constdef = [disableTransparency,175,18,37]; @symbol_type<0> = [Boolean,175,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 176; @position = 18; @symbol_constdef = [dithering,176,18,27]; @symbol_type<0> = [String,176,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 177; @position = 18; @symbol_constdef = [automaticPalette,177,18,34]; @symbol_type<0> = [Boolean,177,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 180; @symbol_moduledef = [system_loc__hint_action_menu,180,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 180; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 181; @position = 18; @symbol_constdef = [x,181,18,19]; @symbol_type<0> = [Number,181,23,29]; ]
+            const x as Number = 164;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 182; @position = 18; @symbol_constdef = [y,182,18,19]; @symbol_type<0> = [Number,182,23,29]; ]
+            const y as Number = 36;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 183; @position = 18; @symbol_constdef = [horizontalJustification,183,18,41]; @symbol_type<0> = [String,183,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 184; @position = 18; @symbol_constdef = [verticalJustification,184,18,39]; @symbol_type<0> = [String,184,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 187; @symbol_moduledef = [confirmation_icon__hint_confirm,187,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 187; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 188; @position = 18; @symbol_constdef = [filename,188,18,26]; @symbol_type<0> = [String,188,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 189; @position = 18; @symbol_constdef = [disableTransparency,189,18,37]; @symbol_type<0> = [Boolean,189,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 190; @position = 18; @symbol_constdef = [dithering,190,18,27]; @symbol_type<0> = [String,190,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 191; @position = 18; @symbol_constdef = [automaticPalette,191,18,34]; @symbol_type<0> = [Boolean,191,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 194; @symbol_moduledef = [system_loc__hint_button_left_middle,194,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 194; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 195; @position = 18; @symbol_constdef = [x,195,18,19]; @symbol_type<0> = [Number,195,23,29]; ]
+            const x as Number = 4;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 196; @position = 18; @symbol_constdef = [y,196,18,19]; @symbol_type<0> = [Number,196,23,29]; ]
+            const y as Number = 88;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 197; @position = 18; @symbol_constdef = [horizontalJustification,197,18,41]; @symbol_type<0> = [String,197,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 198; @position = 18; @symbol_constdef = [verticalJustification,198,18,39]; @symbol_type<0> = [String,198,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 201; @symbol_moduledef = [prompt_size__body_no_title,201,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 201; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 202; @position = 18; @symbol_constdef = [width,202,18,23]; @symbol_type<0> = [Number,202,27,33]; ]
+            const width as Number = 118;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 203; @position = 18; @symbol_constdef = [height,203,18,24]; @symbol_type<0> = [Number,203,28,34]; ]
+            const height as Number = 54;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 206; @symbol_moduledef = [system_icon_light__hint_button_left_top,206,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 206; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 207; @position = 18; @symbol_constdef = [exclude,207,18,25]; @symbol_type<0> = [Boolean,207,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 210; @symbol_moduledef = [prompt_color_light__background,210,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 210; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 211; @position = 18; @symbol_constdef = [background,211,18,28]; @symbol_type<0> = [Number,211,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 214; @symbol_moduledef = [confirmation_input__delete,214,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 214; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 215 18 ]
+                symbol [ WatchUi %tmp.53 215 27 34 ];
+                %tmp.53 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.54 215 35 44 ];
+                %tmp.54 = getv %tmp.53 :KEY_ENTER;
+                putv self :button %tmp.54;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 215; @position = 18; @symbol_constdef = [button,215,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 218; @symbol_moduledef = [system_icon_dark__hint_button_left_top,218,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 218; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 219; @position = 18; @symbol_constdef = [exclude,219,18,25]; @symbol_type<0> = [Boolean,219,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 222; @symbol_moduledef = [system_input__action_menu,222,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 222; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 223 18 ]
+                symbol [ WatchUi %tmp.55 223 27 34 ];
+                %tmp.55 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.56 223 35 44 ];
+                %tmp.56 = getv %tmp.55 :KEY_ENTER;
+                putv self :button %tmp.56;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 223; @position = 18; @symbol_constdef = [button,223,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 226; @symbol_moduledef = [system_icon_light__save,226,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 226; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 227; @position = 18; @symbol_constdef = [filename,227,18,26]; @symbol_type<0> = [String,227,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_light__save.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 228; @position = 18; @symbol_constdef = [disableTransparency,228,18,37]; @symbol_type<0> = [Boolean,228,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 229; @position = 18; @symbol_constdef = [dithering,229,18,27]; @symbol_type<0> = [String,229,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 230; @position = 18; @symbol_constdef = [automaticPalette,230,18,34]; @symbol_type<0> = [Boolean,230,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 233; @symbol_moduledef = [prompt_color_light__body,233,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 233; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 235 18 ]
+                symbol [ Graphics %tmp.57 235 31 39 ];
+                %tmp.57 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.58 235 40 57 ];
+                %tmp.58 = getv %tmp.57 :COLOR_TRANSPARENT;
+                putv self :background %tmp.58;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 234; @position = 18; @symbol_constdef = [color,234,18,23]; @symbol_type<0> = [Number,234,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 235; @position = 18; @symbol_constdef = [background,235,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 238; @symbol_moduledef = [system_loc__subwindow,238,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 238; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 239; @position = 18; @symbol_constdef = [exclude,239,18,25]; @symbol_type<0> = [Boolean,239,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 242; @symbol_moduledef = [system_icon_light__warning,242,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 242; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 243; @position = 18; @symbol_constdef = [filename,243,18,26]; @symbol_type<0> = [String,243,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_light__warning.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 244; @position = 18; @symbol_constdef = [disableTransparency,244,18,37]; @symbol_type<0> = [Boolean,244,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 245; @position = 18; @symbol_constdef = [dithering,245,18,27]; @symbol_type<0> = [String,245,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 246; @position = 18; @symbol_constdef = [automaticPalette,246,18,34]; @symbol_type<0> = [Boolean,246,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 249; @symbol_moduledef = [confirmation_color_light__body,249,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 249; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 251 18 ]
+                symbol [ Graphics %tmp.59 251 31 39 ];
+                %tmp.59 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.60 251 40 57 ];
+                %tmp.60 = getv %tmp.59 :COLOR_TRANSPARENT;
+                putv self :background %tmp.60;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 250; @position = 18; @symbol_constdef = [color,250,18,23]; @symbol_type<0> = [Number,250,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 251; @position = 18; @symbol_constdef = [background,251,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 254; @symbol_moduledef = [confirmation_icon_light__hint_keep,254,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 254; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 255; @position = 18; @symbol_constdef = [filename,255,18,26]; @symbol_type<0> = [String,255,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 256; @position = 18; @symbol_constdef = [disableTransparency,256,18,37]; @symbol_type<0> = [Boolean,256,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 257; @position = 18; @symbol_constdef = [dithering,257,18,27]; @symbol_type<0> = [String,257,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 258; @position = 18; @symbol_constdef = [automaticPalette,258,18,34]; @symbol_type<0> = [Boolean,258,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 261; @symbol_moduledef = [activity_color_light__background,261,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 261; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 262; @position = 18; @symbol_constdef = [color,262,18,23]; @symbol_type<0> = [Number,262,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 263; @position = 18; @symbol_constdef = [background,263,18,28]; @symbol_type<0> = [Number,263,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 266; @symbol_moduledef = [system_icon_positive__hint_button_right_top,266,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 266; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 267; @position = 18; @symbol_constdef = [filename,267,18,26]; @symbol_type<0> = [String,267,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 268; @position = 18; @symbol_constdef = [disableTransparency,268,18,37]; @symbol_type<0> = [Boolean,268,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 269; @position = 18; @symbol_constdef = [dithering,269,18,27]; @symbol_type<0> = [String,269,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 270; @position = 18; @symbol_constdef = [automaticPalette,270,18,34]; @symbol_type<0> = [Boolean,270,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 273; @symbol_moduledef = [system_size__screen,273,15,34]; ]
+        module system_size__screen {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 273; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 274; @position = 18; @symbol_constdef = [width,274,18,23]; @symbol_type<0> = [Number,274,27,33]; ]
+            const width as Number = 176;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 275; @position = 18; @symbol_constdef = [height,275,18,24]; @symbol_type<0> = [Number,275,28,34]; ]
+            const height as Number = 176;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 278; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,278,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 278; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 279; @position = 18; @symbol_constdef = [filename,279,18,26]; @symbol_type<0> = [String,279,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_destructive__hint_button_right_bottom.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 280; @position = 18; @symbol_constdef = [disableTransparency,280,18,37]; @symbol_type<0> = [Boolean,280,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 281; @position = 18; @symbol_constdef = [dithering,281,18,27]; @symbol_type<0> = [String,281,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 282; @position = 18; @symbol_constdef = [automaticPalette,282,18,34]; @symbol_type<0> = [Boolean,282,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 285; @symbol_moduledef = [system_color_light__background,285,15,45]; ]
+        module system_color_light__background {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 285; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 286; @position = 18; @symbol_constdef = [color,286,18,23]; @symbol_type<0> = [Number,286,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 287; @position = 18; @symbol_constdef = [background,287,18,28]; @symbol_type<0> = [Number,287,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 290; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,290,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 290; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 291; @position = 18; @symbol_constdef = [filename,291,18,26]; @symbol_type<0> = [String,291,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 292; @position = 18; @symbol_constdef = [disableTransparency,292,18,37]; @symbol_type<0> = [Boolean,292,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 293; @position = 18; @symbol_constdef = [dithering,293,18,27]; @symbol_type<0> = [String,293,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 294; @position = 18; @symbol_constdef = [automaticPalette,294,18,34]; @symbol_type<0> = [Boolean,294,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 297; @symbol_moduledef = [confirmation_loc__hint_confirm,297,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 297; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 298; @position = 18; @symbol_constdef = [x,298,18,19]; @symbol_type<0> = [Number,298,23,29]; ]
+            const x as Number = 162;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 299; @position = 18; @symbol_constdef = [y,299,18,19]; @symbol_type<0> = [Number,299,23,29]; ]
+            const y as Number = 36;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 300; @position = 18; @symbol_constdef = [horizontalJustification,300,18,41]; @symbol_type<0> = [String,300,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 301; @position = 18; @symbol_constdef = [verticalJustification,301,18,39]; @symbol_type<0> = [String,301,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 304; @symbol_moduledef = [activity_color_dark__text,304,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 304; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 306 18 ]
+                symbol [ Graphics %tmp.61 306 31 39 ];
+                %tmp.61 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.62 306 40 57 ];
+                %tmp.62 = getv %tmp.61 :COLOR_TRANSPARENT;
+                putv self :background %tmp.62;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 305; @position = 18; @symbol_constdef = [color,305,18,23]; @symbol_type<0> = [Number,305,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 306; @position = 18; @symbol_constdef = [background,306,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 309; @symbol_moduledef = [confirmation_input__keep,309,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 309; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 310 18 ]
+                symbol [ WatchUi %tmp.63 310 27 34 ];
+                %tmp.63 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.64 310 35 43 ];
+                %tmp.64 = getv %tmp.63 :KEY_DOWN;
+                putv self :button %tmp.64;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 310; @position = 18; @symbol_constdef = [button,310,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 313; @symbol_moduledef = [prompt_loc__body_with_title,313,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 313; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 314; @position = 18; @symbol_constdef = [x,314,18,19]; @symbol_type<0> = [Number,314,23,29]; ]
+            const x as Number = 29;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 315; @position = 18; @symbol_constdef = [y,315,18,19]; @symbol_type<0> = [Number,315,23,29]; ]
+            const y as Number = 109;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 318; @symbol_moduledef = [system_icon_dark__search,318,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 318; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 319; @position = 18; @symbol_constdef = [filename,319,18,26]; @symbol_type<0> = [String,319,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_dark__search.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 320; @position = 18; @symbol_constdef = [disableTransparency,320,18,37]; @symbol_type<0> = [Boolean,320,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 321; @position = 18; @symbol_constdef = [dithering,321,18,27]; @symbol_type<0> = [String,321,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 322; @position = 18; @symbol_constdef = [automaticPalette,322,18,34]; @symbol_type<0> = [Boolean,322,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 325; @symbol_moduledef = [activity_color_light__text,325,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 325; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 327 18 ]
+                symbol [ Graphics %tmp.65 327 31 39 ];
+                %tmp.65 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.66 327 40 57 ];
+                %tmp.66 = getv %tmp.65 :COLOR_TRANSPARENT;
+                putv self :background %tmp.66;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 326; @position = 18; @symbol_constdef = [color,326,18,23]; @symbol_type<0> = [Number,326,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 327; @position = 18; @symbol_constdef = [background,327,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 330; @symbol_moduledef = [confirmation_icon__hint_keep,330,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 330; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 331; @position = 18; @symbol_constdef = [filename,331,18,26]; @symbol_type<0> = [String,331,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 332; @position = 18; @symbol_constdef = [disableTransparency,332,18,37]; @symbol_type<0> = [Boolean,332,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 333; @position = 18; @symbol_constdef = [dithering,333,18,27]; @symbol_type<0> = [String,333,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 334; @position = 18; @symbol_constdef = [automaticPalette,334,18,34]; @symbol_type<0> = [Boolean,334,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 337; @symbol_moduledef = [system_icon_dark__save,337,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 337; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 338; @position = 18; @symbol_constdef = [filename,338,18,26]; @symbol_type<0> = [String,338,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_dark__save.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 339; @position = 18; @symbol_constdef = [disableTransparency,339,18,37]; @symbol_type<0> = [Boolean,339,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 340; @position = 18; @symbol_constdef = [dithering,340,18,27]; @symbol_type<0> = [String,340,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 341; @position = 18; @symbol_constdef = [automaticPalette,341,18,34]; @symbol_type<0> = [Boolean,341,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 344; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,344,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 344; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 345; @position = 18; @symbol_constdef = [filename,345,18,26]; @symbol_type<0> = [String,345,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_destructive__hint_button_left_middle.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 346; @position = 18; @symbol_constdef = [disableTransparency,346,18,37]; @symbol_type<0> = [Boolean,346,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 347; @position = 18; @symbol_constdef = [dithering,347,18,27]; @symbol_type<0> = [String,347,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 348; @position = 18; @symbol_constdef = [automaticPalette,348,18,34]; @symbol_type<0> = [Boolean,348,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 351; @symbol_moduledef = [system_icon_light__search,351,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 351; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 352; @position = 18; @symbol_constdef = [filename,352,18,26]; @symbol_type<0> = [String,352,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_light__search.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 353; @position = 18; @symbol_constdef = [disableTransparency,353,18,37]; @symbol_type<0> = [Boolean,353,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 354; @position = 18; @symbol_constdef = [dithering,354,18,27]; @symbol_type<0> = [String,354,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 355; @position = 18; @symbol_constdef = [automaticPalette,355,18,34]; @symbol_type<0> = [Boolean,355,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 358; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,358,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 358; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 359; @position = 18; @symbol_constdef = [filename,359,18,26]; @symbol_type<0> = [String,359,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_dark__hint_button_left_bottom.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 360; @position = 18; @symbol_constdef = [disableTransparency,360,18,37]; @symbol_type<0> = [Boolean,360,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 361; @position = 18; @symbol_constdef = [dithering,361,18,27]; @symbol_type<0> = [String,361,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 362; @position = 18; @symbol_constdef = [automaticPalette,362,18,34]; @symbol_type<0> = [Boolean,362,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 365; @symbol_moduledef = [system_icon_positive__hint_button_left_top,365,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 365; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 366; @position = 18; @symbol_constdef = [exclude,366,18,25]; @symbol_type<0> = [Boolean,366,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 369; @symbol_moduledef = [system_loc__hint_button_right_bottom,369,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 369; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 370; @position = 18; @symbol_constdef = [x,370,18,19]; @symbol_type<0> = [Number,370,23,29]; ]
+            const x as Number = 164;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 371; @position = 18; @symbol_constdef = [y,371,18,19]; @symbol_type<0> = [Number,371,23,29]; ]
+            const y as Number = 134;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 372; @position = 18; @symbol_constdef = [horizontalJustification,372,18,41]; @symbol_type<0> = [String,372,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 373; @position = 18; @symbol_constdef = [verticalJustification,373,18,39]; @symbol_type<0> = [String,373,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 376; @symbol_moduledef = [confirmation_icon_dark__hint_reject,376,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 376; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 377; @position = 18; @symbol_constdef = [filename,377,18,26]; @symbol_type<0> = [String,377,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 378; @position = 18; @symbol_constdef = [disableTransparency,378,18,37]; @symbol_type<0> = [Boolean,378,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 379; @position = 18; @symbol_constdef = [dithering,379,18,27]; @symbol_type<0> = [String,379,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 380; @position = 18; @symbol_constdef = [automaticPalette,380,18,34]; @symbol_type<0> = [Boolean,380,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 383; @symbol_moduledef = [confirmation_color_dark__body,383,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 383; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 385 18 ]
+                symbol [ Graphics %tmp.67 385 31 39 ];
+                %tmp.67 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.68 385 40 57 ];
+                %tmp.68 = getv %tmp.67 :COLOR_TRANSPARENT;
+                putv self :background %tmp.68;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 384; @position = 18; @symbol_constdef = [color,384,18,23]; @symbol_type<0> = [Number,384,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 385; @position = 18; @symbol_constdef = [background,385,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 388; @symbol_moduledef = [confirmation_icon_light__hint_confirm,388,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 388; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 389; @position = 18; @symbol_constdef = [filename,389,18,26]; @symbol_type<0> = [String,389,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 390; @position = 18; @symbol_constdef = [disableTransparency,390,18,37]; @symbol_type<0> = [Boolean,390,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 391; @position = 18; @symbol_constdef = [dithering,391,18,27]; @symbol_type<0> = [String,391,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 392; @position = 18; @symbol_constdef = [automaticPalette,392,18,34]; @symbol_type<0> = [Boolean,392,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 395; @symbol_moduledef = [prompt_color_dark__title,395,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 395; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 397 18 ]
+                symbol [ Graphics %tmp.69 397 31 39 ];
+                %tmp.69 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.70 397 40 57 ];
+                %tmp.70 = getv %tmp.69 :COLOR_TRANSPARENT;
+                putv self :background %tmp.70;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 396; @position = 18; @symbol_constdef = [color,396,18,23]; @symbol_type<0> = [Number,396,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 397; @position = 18; @symbol_constdef = [background,397,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 400; @symbol_moduledef = [system_icon_destructive__cancel,400,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 400; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 401; @position = 18; @symbol_constdef = [filename,401,18,26]; @symbol_type<0> = [String,401,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_dark__cancel.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 402; @position = 18; @symbol_constdef = [disableTransparency,402,18,37]; @symbol_type<0> = [Boolean,402,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 403; @position = 18; @symbol_constdef = [dithering,403,18,27]; @symbol_type<0> = [String,403,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 404; @position = 18; @symbol_constdef = [automaticPalette,404,18,34]; @symbol_type<0> = [Boolean,404,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 407; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,407,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 407; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 408; @position = 18; @symbol_constdef = [filename,408,18,26]; @symbol_type<0> = [String,408,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 409; @position = 18; @symbol_constdef = [disableTransparency,409,18,37]; @symbol_type<0> = [Boolean,409,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 410; @position = 18; @symbol_constdef = [dithering,410,18,27]; @symbol_type<0> = [String,410,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 411; @position = 18; @symbol_constdef = [automaticPalette,411,18,34]; @symbol_type<0> = [Boolean,411,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 414; @symbol_moduledef = [prompt_loc__title,414,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 414; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 415; @position = 18; @symbol_constdef = [x,415,18,19]; @symbol_type<0> = [Number,415,23,29]; ]
+            const x as Number = 29;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 416; @position = 18; @symbol_constdef = [y,416,18,19]; @symbol_type<0> = [Number,416,23,29]; ]
+            const y as Number = 12;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 419; @symbol_moduledef = [confirmation_font_enhanced_readability__body,419,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 419; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 420; @position = 18; @symbol_constdef = [exclude,420,18,25]; @symbol_type<0> = [Boolean,420,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 423; @symbol_moduledef = [prompt_color_light__title,423,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 423; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 425 18 ]
+                symbol [ Graphics %tmp.71 425 31 39 ];
+                %tmp.71 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.72 425 40 57 ];
+                %tmp.72 = getv %tmp.71 :COLOR_TRANSPARENT;
+                putv self :background %tmp.72;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 424; @position = 18; @symbol_constdef = [color,424,18,23]; @symbol_type<0> = [Number,424,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 425; @position = 18; @symbol_constdef = [background,425,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 428; @symbol_moduledef = [system_icon_dark__hint_button_right_top,428,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 428; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 429; @position = 18; @symbol_constdef = [filename,429,18,26]; @symbol_type<0> = [String,429,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 430; @position = 18; @symbol_constdef = [disableTransparency,430,18,37]; @symbol_type<0> = [Boolean,430,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 431; @position = 18; @symbol_constdef = [dithering,431,18,27]; @symbol_type<0> = [String,431,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 432; @position = 18; @symbol_constdef = [automaticPalette,432,18,34]; @symbol_type<0> = [Boolean,432,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 435; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,435,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 435; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 436; @position = 18; @symbol_constdef = [filename,436,18,26]; @symbol_type<0> = [String,436,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_dark__hint_button_left_middle.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 437; @position = 18; @symbol_constdef = [disableTransparency,437,18,37]; @symbol_type<0> = [Boolean,437,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 438; @position = 18; @symbol_constdef = [dithering,438,18,27]; @symbol_type<0> = [String,438,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 439; @position = 18; @symbol_constdef = [automaticPalette,439,18,34]; @symbol_type<0> = [Boolean,439,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 442; @symbol_moduledef = [confirmation_icon_dark__hint_keep,442,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 442; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 443; @position = 18; @symbol_constdef = [filename,443,18,26]; @symbol_type<0> = [String,443,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 444; @position = 18; @symbol_constdef = [disableTransparency,444,18,37]; @symbol_type<0> = [Boolean,444,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 445; @position = 18; @symbol_constdef = [dithering,445,18,27]; @symbol_type<0> = [String,445,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 446; @position = 18; @symbol_constdef = [automaticPalette,446,18,34]; @symbol_type<0> = [Boolean,446,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 449; @symbol_moduledef = [system_icon_light__cancel,449,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 449; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 450; @position = 18; @symbol_constdef = [filename,450,18,26]; @symbol_type<0> = [String,450,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_light__cancel.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 451; @position = 18; @symbol_constdef = [disableTransparency,451,18,37]; @symbol_type<0> = [Boolean,451,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 452; @position = 18; @symbol_constdef = [dithering,452,18,27]; @symbol_type<0> = [String,452,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 453; @position = 18; @symbol_constdef = [automaticPalette,453,18,34]; @symbol_type<0> = [Boolean,453,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 456; @symbol_moduledef = [confirmation_icon_light__hint_reject,456,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 456; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 457; @position = 18; @symbol_constdef = [filename,457,18,26]; @symbol_type<0> = [String,457,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 458; @position = 18; @symbol_constdef = [disableTransparency,458,18,37]; @symbol_type<0> = [Boolean,458,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 459; @position = 18; @symbol_constdef = [dithering,459,18,27]; @symbol_type<0> = [String,459,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 460; @position = 18; @symbol_constdef = [automaticPalette,460,18,34]; @symbol_type<0> = [Boolean,460,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 463; @symbol_moduledef = [system_icon_light__about,463,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 463; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 464; @position = 18; @symbol_constdef = [filename,464,18,26]; @symbol_type<0> = [String,464,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_light__about.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 465; @position = 18; @symbol_constdef = [disableTransparency,465,18,37]; @symbol_type<0> = [Boolean,465,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 466; @position = 18; @symbol_constdef = [dithering,466,18,27]; @symbol_type<0> = [String,466,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 467; @position = 18; @symbol_constdef = [automaticPalette,467,18,34]; @symbol_type<0> = [Boolean,467,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 470; @symbol_moduledef = [system_size__toast_icon,470,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 470; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 471; @position = 18; @symbol_constdef = [scaleX,471,18,24]; @symbol_type<0> = [Number,471,28,34]; ]
+            const scaleX as Number = 40;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 472; @position = 18; @symbol_constdef = [scaleRelativeTo,472,18,33]; @symbol_type<0> = [String,472,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 475; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,475,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 475; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 476; @position = 18; @symbol_constdef = [exclude,476,18,25]; @symbol_type<0> = [Boolean,476,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 479; @symbol_moduledef = [confirmation_icon__hint_reject,479,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 479; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 480; @position = 18; @symbol_constdef = [filename,480,18,26]; @symbol_type<0> = [String,480,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 481; @position = 18; @symbol_constdef = [disableTransparency,481,18,37]; @symbol_type<0> = [Boolean,481,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 482; @position = 18; @symbol_constdef = [dithering,482,18,27]; @symbol_type<0> = [String,482,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 483; @position = 18; @symbol_constdef = [automaticPalette,483,18,34]; @symbol_type<0> = [Boolean,483,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 486; @symbol_moduledef = [system_icon_light__hint_action_menu,486,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 486; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 487; @position = 18; @symbol_constdef = [filename,487,18,26]; @symbol_type<0> = [String,487,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 488; @position = 18; @symbol_constdef = [disableTransparency,488,18,37]; @symbol_type<0> = [Boolean,488,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 489; @position = 18; @symbol_constdef = [dithering,489,18,27]; @symbol_type<0> = [String,489,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 490; @position = 18; @symbol_constdef = [automaticPalette,490,18,34]; @symbol_type<0> = [Boolean,490,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 493; @symbol_moduledef = [system_icon_light__hint_button_right_middle,493,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 493; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 494; @position = 18; @symbol_constdef = [exclude,494,18,25]; @symbol_type<0> = [Boolean,494,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 497; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,497,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 497; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 498; @position = 18; @symbol_constdef = [exclude,498,18,25]; @symbol_type<0> = [Boolean,498,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 501; @symbol_moduledef = [confirmation_loc__hint_reject,501,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 501; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 502; @position = 18; @symbol_constdef = [x,502,18,19]; @symbol_type<0> = [Number,502,23,29]; ]
+            const x as Number = 15;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 503; @position = 18; @symbol_constdef = [y,503,18,19]; @symbol_type<0> = [Number,503,23,29]; ]
+            const y as Number = 140;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 504; @position = 18; @symbol_constdef = [horizontalJustification,504,18,41]; @symbol_type<0> = [String,504,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 505; @position = 18; @symbol_constdef = [verticalJustification,505,18,39]; @symbol_type<0> = [String,505,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 508; @symbol_moduledef = [confirmation_icon_dark__hint_delete,508,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 508; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 509; @position = 18; @symbol_constdef = [filename,509,18,26]; @symbol_type<0> = [String,509,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 510; @position = 18; @symbol_constdef = [disableTransparency,510,18,37]; @symbol_type<0> = [Boolean,510,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 511; @position = 18; @symbol_constdef = [dithering,511,18,27]; @symbol_type<0> = [String,511,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 512; @position = 18; @symbol_constdef = [automaticPalette,512,18,34]; @symbol_type<0> = [Boolean,512,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 515; @symbol_moduledef = [activity_color_dark__background,515,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 515; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 516; @position = 18; @symbol_constdef = [color,516,18,23]; @symbol_type<0> = [Number,516,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 517; @position = 18; @symbol_constdef = [background,517,18,28]; @symbol_type<0> = [Number,517,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 520; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,520,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 520; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 521; @position = 18; @symbol_constdef = [filename,521,18,26]; @symbol_type<0> = [String,521,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_light__hint_button_left_bottom.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 522; @position = 18; @symbol_constdef = [disableTransparency,522,18,37]; @symbol_type<0> = [Boolean,522,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 523; @position = 18; @symbol_constdef = [dithering,523,18,27]; @symbol_type<0> = [String,523,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 524; @position = 18; @symbol_constdef = [automaticPalette,524,18,34]; @symbol_type<0> = [Boolean,524,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 527; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,527,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 527; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 528; @position = 18; @symbol_constdef = [filename,528,18,26]; @symbol_type<0> = [String,528,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_positive__hint_button_left_middle.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 529; @position = 18; @symbol_constdef = [disableTransparency,529,18,37]; @symbol_type<0> = [Boolean,529,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 530; @position = 18; @symbol_constdef = [dithering,530,18,27]; @symbol_type<0> = [String,530,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 531; @position = 18; @symbol_constdef = [automaticPalette,531,18,34]; @symbol_type<0> = [Boolean,531,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 534; @symbol_moduledef = [system_size__menu_icon,534,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 534; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 535; @position = 18; @symbol_constdef = [scaleX,535,18,24]; @symbol_type<0> = [Number,535,28,34]; ]
+            const scaleX as Number = 24;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 536; @position = 18; @symbol_constdef = [scaleY,536,18,24]; @symbol_type<0> = [Number,536,28,34]; ]
+            const scaleY as Number = 24;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 537; @position = 18; @symbol_constdef = [scaleRelativeTo,537,18,33]; @symbol_type<0> = [String,537,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 540; @symbol_moduledef = [system_icon_destructive__warning,540,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 540; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 541; @position = 18; @symbol_constdef = [filename,541,18,26]; @symbol_type<0> = [String,541,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_dark__warning.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 542; @position = 18; @symbol_constdef = [disableTransparency,542,18,37]; @symbol_type<0> = [Boolean,542,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 543; @position = 18; @symbol_constdef = [dithering,543,18,27]; @symbol_type<0> = [String,543,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 544; @position = 18; @symbol_constdef = [automaticPalette,544,18,34]; @symbol_type<0> = [Boolean,544,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 547; @symbol_moduledef = [system_loc__hint_button_right_middle,547,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 547; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 548; @position = 18; @symbol_constdef = [exclude,548,18,25]; @symbol_type<0> = [Boolean,548,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 551; @symbol_moduledef = [system_icon_dark__cancel,551,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 551; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 552; @position = 18; @symbol_constdef = [filename,552,18,26]; @symbol_type<0> = [String,552,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_dark__cancel.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 553; @position = 18; @symbol_constdef = [disableTransparency,553,18,37]; @symbol_type<0> = [Boolean,553,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 554; @position = 18; @symbol_constdef = [dithering,554,18,27]; @symbol_type<0> = [String,554,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 555; @position = 18; @symbol_constdef = [automaticPalette,555,18,34]; @symbol_type<0> = [Boolean,555,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 558; @symbol_moduledef = [prompt_size__body_with_title,558,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 558; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 559; @position = 18; @symbol_constdef = [width,559,18,23]; @symbol_type<0> = [Number,559,27,33]; ]
+            const width as Number = 118;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 560; @position = 18; @symbol_constdef = [height,560,18,24]; @symbol_type<0> = [Number,560,28,34]; ]
+            const height as Number = 54;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 563; @symbol_moduledef = [system_loc__hint_button_right_top,563,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 563; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 564; @position = 18; @symbol_constdef = [x,564,18,19]; @symbol_type<0> = [Number,564,23,29]; ]
+            const x as Number = 164;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 565; @position = 18; @symbol_constdef = [y,565,18,19]; @symbol_type<0> = [Number,565,23,29]; ]
+            const y as Number = 36;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 566; @position = 18; @symbol_constdef = [horizontalJustification,566,18,41]; @symbol_type<0> = [String,566,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 567; @position = 18; @symbol_constdef = [verticalJustification,567,18,39]; @symbol_type<0> = [String,567,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 570; @symbol_moduledef = [system_color_light__text,570,15,39]; ]
+        module system_color_light__text {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 570; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 572 18 ]
+                symbol [ Graphics %tmp.73 572 31 39 ];
+                %tmp.73 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.74 572 40 57 ];
+                %tmp.74 = getv %tmp.73 :COLOR_TRANSPARENT;
+                putv self :background %tmp.74;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 571; @position = 18; @symbol_constdef = [color,571,18,23]; @symbol_type<0> = [Number,571,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 572; @position = 18; @symbol_constdef = [background,572,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 575; @symbol_moduledef = [system_icon_light__check,575,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 575; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 576; @position = 18; @symbol_constdef = [filename,576,18,26]; @symbol_type<0> = [String,576,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_light__check.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 577; @position = 18; @symbol_constdef = [disableTransparency,577,18,37]; @symbol_type<0> = [Boolean,577,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 578; @position = 18; @symbol_constdef = [dithering,578,18,27]; @symbol_type<0> = [String,578,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 579; @position = 18; @symbol_constdef = [automaticPalette,579,18,34]; @symbol_type<0> = [Boolean,579,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 582; @symbol_moduledef = [confirmation_input__reject,582,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 582; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 583 18 ]
+                symbol [ WatchUi %tmp.75 583 27 34 ];
+                %tmp.75 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.76 583 35 43 ];
+                %tmp.76 = getv %tmp.75 :KEY_DOWN;
+                putv self :button %tmp.76;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 583; @position = 18; @symbol_constdef = [button,583,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 586; @symbol_moduledef = [system_icon_light__revert,586,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 586; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 587; @position = 18; @symbol_constdef = [filename,587,18,26]; @symbol_type<0> = [String,587,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_light__revert.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 588; @position = 18; @symbol_constdef = [disableTransparency,588,18,37]; @symbol_type<0> = [Boolean,588,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 589; @position = 18; @symbol_constdef = [dithering,589,18,27]; @symbol_type<0> = [String,589,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 590; @position = 18; @symbol_constdef = [automaticPalette,590,18,34]; @symbol_type<0> = [Boolean,590,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 593; @symbol_moduledef = [system_size__subwindow,593,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 593; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 594; @position = 18; @symbol_constdef = [exclude,594,18,25]; @symbol_type<0> = [Boolean,594,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 597; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,597,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 597; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 598; @position = 18; @symbol_constdef = [filename,598,18,26]; @symbol_type<0> = [String,598,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_positive__hint_button_left_bottom.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 599; @position = 18; @symbol_constdef = [disableTransparency,599,18,37]; @symbol_type<0> = [Boolean,599,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 600; @position = 18; @symbol_constdef = [dithering,600,18,27]; @symbol_type<0> = [String,600,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 601; @position = 18; @symbol_constdef = [automaticPalette,601,18,34]; @symbol_type<0> = [Boolean,601,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 604; @symbol_moduledef = [system_icon_dark__check,604,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 604; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 605; @position = 18; @symbol_constdef = [filename,605,18,26]; @symbol_type<0> = [String,605,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_dark__check.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 606; @position = 18; @symbol_constdef = [disableTransparency,606,18,37]; @symbol_type<0> = [Boolean,606,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 607; @position = 18; @symbol_constdef = [dithering,607,18,27]; @symbol_type<0> = [String,607,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 608; @position = 18; @symbol_constdef = [automaticPalette,608,18,34]; @symbol_type<0> = [Boolean,608,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 611; @symbol_moduledef = [confirmation_loc__hint_keep,611,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 611; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 612; @position = 18; @symbol_constdef = [x,612,18,19]; @symbol_type<0> = [Number,612,23,29]; ]
+            const x as Number = 15;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 613; @position = 18; @symbol_constdef = [y,613,18,19]; @symbol_type<0> = [Number,613,23,29]; ]
+            const y as Number = 140;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 614; @position = 18; @symbol_constdef = [horizontalJustification,614,18,41]; @symbol_type<0> = [String,614,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 615; @position = 18; @symbol_constdef = [verticalJustification,615,18,39]; @symbol_type<0> = [String,615,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 618; @symbol_moduledef = [confirmation_loc__hint_delete,618,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 618; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 619; @position = 18; @symbol_constdef = [x,619,18,19]; @symbol_type<0> = [Number,619,23,29]; ]
+            const x as Number = 162;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 620; @position = 18; @symbol_constdef = [y,620,18,19]; @symbol_type<0> = [Number,620,23,29]; ]
+            const y as Number = 37;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 621; @position = 18; @symbol_constdef = [horizontalJustification,621,18,41]; @symbol_type<0> = [String,621,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 622; @position = 18; @symbol_constdef = [verticalJustification,622,18,39]; @symbol_type<0> = [String,622,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 625; @symbol_moduledef = [system_icon_positive__hint_action_menu,625,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 625; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 626; @position = 18; @symbol_constdef = [filename,626,18,26]; @symbol_type<0> = [String,626,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 627; @position = 18; @symbol_constdef = [disableTransparency,627,18,37]; @symbol_type<0> = [Boolean,627,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 628; @position = 18; @symbol_constdef = [dithering,628,18,27]; @symbol_type<0> = [String,628,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 629; @position = 18; @symbol_constdef = [automaticPalette,629,18,34]; @symbol_type<0> = [Boolean,629,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 632; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,632,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 632; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 633; @position = 18; @symbol_constdef = [exclude,633,18,25]; @symbol_type<0> = [Boolean,633,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 636; @symbol_moduledef = [system_icon_light__hint_button_left_middle,636,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 636; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 637; @position = 18; @symbol_constdef = [filename,637,18,26]; @symbol_type<0> = [String,637,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_light__hint_button_left_middle.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 638; @position = 18; @symbol_constdef = [disableTransparency,638,18,37]; @symbol_type<0> = [Boolean,638,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 639; @position = 18; @symbol_constdef = [dithering,639,18,27]; @symbol_type<0> = [String,639,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 640; @position = 18; @symbol_constdef = [automaticPalette,640,18,34]; @symbol_type<0> = [Boolean,640,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 643; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,643,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 643; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 644; @position = 18; @symbol_constdef = [filename,644,18,26]; @symbol_type<0> = [String,644,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 645; @position = 18; @symbol_constdef = [disableTransparency,645,18,37]; @symbol_type<0> = [Boolean,645,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 646; @position = 18; @symbol_constdef = [dithering,646,18,27]; @symbol_type<0> = [String,646,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 647; @position = 18; @symbol_constdef = [automaticPalette,647,18,34]; @symbol_type<0> = [Boolean,647,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 650; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,650,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 650; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 651; @position = 18; @symbol_constdef = [filename,651,18,26]; @symbol_type<0> = [String,651,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 652; @position = 18; @symbol_constdef = [disableTransparency,652,18,37]; @symbol_type<0> = [Boolean,652,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 653; @position = 18; @symbol_constdef = [dithering,653,18,27]; @symbol_type<0> = [String,653,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 654; @position = 18; @symbol_constdef = [automaticPalette,654,18,34]; @symbol_type<0> = [Boolean,654,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 657; @symbol_moduledef = [system_icon_dark__revert,657,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 657; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 658; @position = 18; @symbol_constdef = [filename,658,18,26]; @symbol_type<0> = [String,658,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_dark__revert.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 659; @position = 18; @symbol_constdef = [disableTransparency,659,18,37]; @symbol_type<0> = [Boolean,659,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 660; @position = 18; @symbol_constdef = [dithering,660,18,27]; @symbol_type<0> = [String,660,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 661; @position = 18; @symbol_constdef = [automaticPalette,661,18,34]; @symbol_type<0> = [Boolean,661,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 664; @symbol_moduledef = [confirmation_icon_light__hint_delete,664,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 664; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 665; @position = 18; @symbol_constdef = [filename,665,18,26]; @symbol_type<0> = [String,665,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 666; @position = 18; @symbol_constdef = [disableTransparency,666,18,37]; @symbol_type<0> = [Boolean,666,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 667; @position = 18; @symbol_constdef = [dithering,667,18,27]; @symbol_type<0> = [String,667,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 668; @position = 18; @symbol_constdef = [automaticPalette,668,18,34]; @symbol_type<0> = [Boolean,668,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 671; @symbol_moduledef = [system_icon_dark__question,671,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 671; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 672; @position = 18; @symbol_constdef = [filename,672,18,26]; @symbol_type<0> = [String,672,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_dark__question.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 673; @position = 18; @symbol_constdef = [disableTransparency,673,18,37]; @symbol_type<0> = [Boolean,673,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 674; @position = 18; @symbol_constdef = [dithering,674,18,27]; @symbol_type<0> = [String,674,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 675; @position = 18; @symbol_constdef = [automaticPalette,675,18,34]; @symbol_type<0> = [Boolean,675,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 678; @symbol_moduledef = [system_icon_light__discard,678,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 678; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 679; @position = 18; @symbol_constdef = [filename,679,18,26]; @symbol_type<0> = [String,679,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_light__discard.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 680; @position = 18; @symbol_constdef = [disableTransparency,680,18,37]; @symbol_type<0> = [Boolean,680,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 681; @position = 18; @symbol_constdef = [dithering,681,18,27]; @symbol_type<0> = [String,681,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 682; @position = 18; @symbol_constdef = [automaticPalette,682,18,34]; @symbol_type<0> = [Boolean,682,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 685; @symbol_moduledef = [device_info,685,15,26]; ]
+        module device_info {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 685; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 687 18 ]
+                symbol [ Toybox %tmp.78 687 32 38 ];
+                %tmp.78 = getv ? :Toybox;
+                symbol [ System %tmp.79 687 39 45 ];
+                %tmp.79 = getv %tmp.78 :System;
+                symbol [ SCREEN_SHAPE_SEMI_OCTAGON %tmp.80 687 46 71 ];
+                %tmp.80 = getv %tmp.79 :SCREEN_SHAPE_SEMI_OCTAGON;
+                putv self :screenShape %tmp.80;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 686; @position = 18; @symbol_constdef = [screenWidth,686,18,29]; @symbol_type<0> = [Number,686,33,39]; ]
+            const screenWidth as Number = 176;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 687; @position = 18; @symbol_constdef = [screenShape,687,18,29]; ]
+            const screenShape;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 688; @position = 18; @symbol_constdef = [hasNightMode,688,18,30]; @symbol_type<0> = [Boolean,688,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 689; @position = 18; @symbol_constdef = [hasGpu,689,18,24]; @symbol_type<0> = [Boolean,689,28,35]; ]
+            const hasGpu as Boolean = false;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 690; @position = 18; @symbol_constdef = [screenHeight,690,18,30]; @symbol_type<0> = [Number,690,34,40]; ]
+            const screenHeight as Number = 176;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 691; @position = 18; @symbol_constdef = [hasTouchScreen,691,18,32]; @symbol_type<0> = [Boolean,691,36,43]; ]
+            const hasTouchScreen as Boolean = false;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 692; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,692,18,44]; @symbol_type<0> = [Boolean,692,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = false;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 695; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,695,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 695; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 696; @position = 18; @symbol_constdef = [filename,696,18,26]; @symbol_type<0> = [String,696,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 697; @position = 18; @symbol_constdef = [disableTransparency,697,18,37]; @symbol_type<0> = [Boolean,697,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 698; @position = 18; @symbol_constdef = [dithering,698,18,27]; @symbol_type<0> = [String,698,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 699; @position = 18; @symbol_constdef = [automaticPalette,699,18,34]; @symbol_type<0> = [Boolean,699,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 702; @symbol_moduledef = [prompt_font__body_no_title,702,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 702; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 703 18 ]
+                symbol [ Graphics %tmp.81 703 34 42 ];
+                %tmp.81 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.82 703 43 62 ];
+                %tmp.82 = getv %tmp.81 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.83 703 63 71 ];
+                %tmp.83 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.84 703 72 92 ];
+                %tmp.84 = getv %tmp.83 :TEXT_JUSTIFY_VCENTER;
+                %tmp.85 = bitor %tmp.82 %tmp.84;
+                putv self :justification %tmp.85;
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 704 18 ]
+                symbol [ Graphics %tmp.86 704 25 33 ];
+                %tmp.86 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.87 704 34 44 ];
+                %tmp.87 = getv %tmp.86 :FONT_XTINY;
+                putv self :font %tmp.87;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 703; @position = 18; @symbol_constdef = [justification,703,18,31]; ]
+            const justification;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 704; @position = 18; @symbol_constdef = [font,704,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 707; @symbol_moduledef = [prompt_size__title_icon,707,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 707; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 708; @position = 18; @symbol_constdef = [scaleX,708,18,24]; @symbol_type<0> = [Number,708,28,34]; ]
+            const scaleX as Number = 30;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 709; @position = 18; @symbol_constdef = [scaleY,709,18,24]; @symbol_type<0> = [Number,709,28,34]; ]
+            const scaleY as Number = 30;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 710; @position = 18; @symbol_constdef = [scaleRelativeTo,710,18,33]; @symbol_type<0> = [String,710,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 713; @symbol_moduledef = [system_icon_dark__warning,713,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 713; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 714; @position = 18; @symbol_constdef = [filename,714,18,26]; @symbol_type<0> = [String,714,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_dark__warning.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 715; @position = 18; @symbol_constdef = [disableTransparency,715,18,37]; @symbol_type<0> = [Boolean,715,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 716; @position = 18; @symbol_constdef = [dithering,716,18,27]; @symbol_type<0> = [String,716,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 717; @position = 18; @symbol_constdef = [automaticPalette,717,18,34]; @symbol_type<0> = [Boolean,717,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 720; @symbol_moduledef = [prompt_loc__title_icon,720,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 720; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 721; @position = 18; @symbol_constdef = [x,721,18,19]; @symbol_type<0> = [Number,721,23,29]; ]
+            const x as Number = 88;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 722; @position = 18; @symbol_constdef = [y,722,18,19]; @symbol_type<0> = [Number,722,23,29]; ]
+            const y as Number = 39;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 723; @position = 18; @symbol_constdef = [horizontalJustification,723,18,41]; @symbol_type<0> = [String,723,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 724; @position = 18; @symbol_constdef = [verticalJustification,724,18,39]; @symbol_type<0> = [String,724,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 727; @symbol_moduledef = [prompt_font_enhanced_readability__title,727,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 727; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 728; @position = 18; @symbol_constdef = [exclude,728,18,25]; @symbol_type<0> = [Boolean,728,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 731; @symbol_moduledef = [prompt_color_dark__body,731,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 731; ]
+            <init> {
+[ "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen" 733 18 ]
+                symbol [ Graphics %tmp.88 733 31 39 ];
+                %tmp.88 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.89 733 40 57 ];
+                %tmp.89 = getv %tmp.88 :COLOR_TRANSPARENT;
+                putv self :background %tmp.89;
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 732; @position = 18; @symbol_constdef = [color,732,18,23]; @symbol_type<0> = [Number,732,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 733; @position = 18; @symbol_constdef = [background,733,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 736; @symbol_moduledef = [confirmation_icon__hint_delete,736,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 736; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 737; @position = 18; @symbol_constdef = [filename,737,18,26]; @symbol_type<0> = [String,737,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 738; @position = 18; @symbol_constdef = [disableTransparency,738,18,37]; @symbol_type<0> = [Boolean,738,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 739; @position = 18; @symbol_constdef = [dithering,739,18,27]; @symbol_type<0> = [String,739,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 740; @position = 18; @symbol_constdef = [automaticPalette,740,18,34]; @symbol_type<0> = [Boolean,740,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 743; @symbol_moduledef = [system_icon_light__hint_button_right_top,743,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 743; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 744; @position = 18; @symbol_constdef = [filename,744,18,26]; @symbol_type<0> = [String,744,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 745; @position = 18; @symbol_constdef = [disableTransparency,745,18,37]; @symbol_type<0> = [Boolean,745,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 746; @position = 18; @symbol_constdef = [dithering,746,18,27]; @symbol_type<0> = [String,746,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 747; @position = 18; @symbol_constdef = [automaticPalette,747,18,34]; @symbol_type<0> = [Boolean,747,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 750; @symbol_moduledef = [confirmation_size__body,750,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 750; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 751; @position = 18; @symbol_constdef = [width,751,18,23]; @symbol_type<0> = [Number,751,27,33]; ]
+            const width as Number = 118;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 752; @position = 18; @symbol_constdef = [height,752,18,24]; @symbol_type<0> = [Number,752,28,34]; ]
+            const height as Number = 54;
+        }
+        [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 755; @symbol_moduledef = [system_icon_positive__check,755,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 755; ]
+            <init> {
+            }
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 756; @position = 18; @symbol_constdef = [filename,756,18,26]; @symbol_type<0> = [String,756,30,36]; ]
+            const filename as String = "/Users/jackhillman/Library/Application Support/Garmin/ConnectIQ/Devices/instinctcrossover/system_icon_dark__check.svg";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 757; @position = 18; @symbol_constdef = [disableTransparency,757,18,37]; @symbol_type<0> = [Boolean,757,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 758; @position = 18; @symbol_constdef = [dithering,758,18,27]; @symbol_type<0> = [String,758,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 759; @position = 18; @symbol_constdef = [automaticPalette,759,18,34]; @symbol_type<0> = [Boolean,759,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+    }
+}
+[ @file = "/Users/jackhillman/source/garmin/Compass/compass/bin/gen/006-B4155-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}
