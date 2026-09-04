@@ -1,66 +1,299 @@
-[ @file = "/Users/jackhillman/source/garmin/Compass/compass/source/compassView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+[ @file = "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
 import Toybox.Graphics;
-[ @file = "/Users/jackhillman/source/garmin/Compass/compass/source/compassView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+[ @file = "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
 import Toybox.WatchUi;
-[ @file = "/Users/jackhillman/source/garmin/Compass/compass/source/compassView.mc"; @line = 4; @symbol_classdef = [compassView,4,6,17]; @symbol_extends<0> = [WatchUi,4,26,33]; @symbol_extends<1> = [View,4,34,38]; ]
+[ @file = "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Sensor,3,14,20]; ]
+import Toybox.Sensor;
+[ @file = "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc"; @line = 5; @symbol_classdef = [compassView,5,6,17]; @symbol_extends<0> = [WatchUi,5,26,33]; @symbol_extends<1> = [View,5,34,38]; ]
 class compassView extends WatchUi.View {
-    [ @file = "/Users/jackhillman/source/garmin/Compass/compass/source/compassView.mc"; @line = 4; ]
+    [ @file = "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc"; @line = 5; ]
     <init> {
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 9 8 ]
+        symbol [ Timer %tmp.2 9 20 25 ];
+        %tmp.2 = getv ? :Timer;
+        symbol [ Timer %tmp.3 9 26 31 ];
+        %tmp.3 = getv %tmp.2 :Timer;
+        putv self :pollTimer %tmp.3;
     }
-    [ @file = "/Users/jackhillman/source/garmin/Compass/compass/source/compassView.mc"; @line = 4; ]
+    [ @file = "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc"; @line = 5; ]
     static
     <init> {
     }
-    [ @file = "/Users/jackhillman/source/garmin/Compass/compass/source/compassView.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; ]
+    [ @file = "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc"; @line = 7; @position = 8; @symbol_vardef = [headingAvailable,7,8,24]; ]
+    var headingAvailable = false;
+    [ @file = "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc"; @line = 8; @position = 8; @symbol_vardef = [currentHeadingDegrees,8,8,29]; ]
+    var currentHeadingDegrees = 0.0;
+    [ @file = "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc"; @line = 9; @position = 8; @symbol_vardef = [pollTimer,9,8,17]; ]
+    var pollTimer;
+    [ @file = "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc"; @line = 11; @symbol_functiondef = [initialize,11,13,23]; ]
     function initialize() as Void {
-_Users_jackhillman_source_garmin_Compass_compass_source_compassView_mc_6_26_8_4_start:
-[ "/Users/jackhillman/source/garmin/Compass/compass/source/compassView.mc" 7 8 ]
-        symbol [ View %tmp.2 7 8 12 ];
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_11_26_13_4_start:
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 12 8 ]
+        symbol [ View %tmp.2 12 8 12 ];
         %tmp.2 = getv ? :View;
-        symbol [ initialize %tmp.3 7 13 23 ];
+        symbol [ initialize %tmp.3 12 13 23 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_Users_jackhillman_source_garmin_Compass_compass_source_compassView_mc_6_26_8_4_stop:
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_11_26_13_4_stop:
     }
-    [ @file = "/Users/jackhillman/source/garmin/Compass/compass/source/compassView.mc"; @line = 11; @symbol_functiondef = [onLayout,11,13,21]; @symbol_param<0> = [dc,11,22,24]; @symbol_param<0>_type<0> = [Dc,11,28,30]; ]
+    [ @file = "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc"; @line = 16; @symbol_functiondef = [onLayout,16,13,21]; @symbol_param<0> = [dc,16,22,24]; @symbol_param<0>_type<0> = [Dc,16,28,30]; ]
     function onLayout(dc as Dc) as Void {
-_Users_jackhillman_source_garmin_Compass_compass_source_compassView_mc_11_40_13_4_start:
-[ "/Users/jackhillman/source/garmin/Compass/compass/source/compassView.mc" 12 8 ]
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_16_40_18_4_start:
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 17 8 ]
         %tmp.1 = self;
-        symbol [ setLayout %tmp.2 12 8 17 ];
+        symbol [ setLayout %tmp.2 17 8 17 ];
         %tmp.2 = getv function %tmp.1 :setLayout;
-        symbol [ Rez %tmp.4 12 18 21 ];
+        symbol [ Rez %tmp.4 17 18 21 ];
         %tmp.4 = getv ? :Rez;
-        symbol [ Layouts %tmp.5 12 22 29 ];
+        symbol [ Layouts %tmp.5 17 22 29 ];
         %tmp.5 = getv %tmp.4 :Layouts;
-        symbol [ MainLayout %tmp.6 12 30 40 ];
+        symbol [ MainLayout %tmp.6 17 30 40 ];
         %tmp.6 = getv function %tmp.5 :MainLayout;
         %tmp.7 = lgetv %dc;
-        symbol [ dc %tmp.7 12 41 43 ];
+        symbol [ dc %tmp.7 17 41 43 ];
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         invoke %tmp.1 %tmp.2(%tmp.8);
-_Users_jackhillman_source_garmin_Compass_compass_source_compassView_mc_11_40_13_4_stop:
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_16_40_18_4_stop:
     }
-    [ @file = "/Users/jackhillman/source/garmin/Compass/compass/source/compassView.mc"; @line = 18; @symbol_functiondef = [onShow,18,13,19]; ]
+    [ @file = "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc"; @line = 23; @symbol_functiondef = [onShow,23,13,19]; ]
     function onShow() as Void {
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_23_30_27_4_start:
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 24 8 ]
+        symbol [ Sensor %tmp.1 24 8 14 ];
+        %tmp.1 = getm $.Toybox.Sensor;
+        symbol [ enableSensorEvents %tmp.2 24 15 33 ];
+        %tmp.2 = getv function %tmp.1 :enableSensorEvents;
+        %tmp.3 = self;
+        symbol [ method %tmp.4 24 34 40 ];
+        %tmp.4 = getv function %tmp.3 :method;
+        %tmp.6 = const :onSensorData;
+        symbol [ onSensorData %tmp.6 24 42 54 const ];
+        %tmp.7 = invoke %tmp.3 %tmp.4(%tmp.6);
+        %tmp.8 = as %tmp.7 (callback(sensorInfo as Sensor.Info) as Void);
+        symbol [ sensorInfo %tmp.8 24 66 76 ];
+        symbol [ Sensor %tmp.8 24 80 86 ];
+        symbol [ Info %tmp.8 24 87 91 ];
+        invoke %tmp.1 %tmp.2(%tmp.8);
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 25 8 ]
+        symbol [ Timer %tmp.12 25 24 29 ];
+        %tmp.12 = getv ? :Timer;
+        symbol [ Timer %tmp.13 25 30 35 ];
+        %tmp.13 = getv function ? %tmp.12 :Timer;
+        %tmp.9 = newc %tmp.13 ();
+        symbol [ pollTimer ? 25 8 17 ];
+        putv self :pollTimer %tmp.9;
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 26 8 ]
+        symbol [ pollTimer %tmp.15 26 8 17 ];
+        %tmp.15 = getv ? :pollTimer;
+        symbol [ start %tmp.16 26 18 23 ];
+        %tmp.16 = getv function %tmp.15 :start;
+        %tmp.17 = self;
+        symbol [ method %tmp.18 26 24 30 ];
+        %tmp.18 = getv function %tmp.17 :method;
+        %tmp.20 = const :checkSensorReady;
+        symbol [ checkSensorReady %tmp.20 26 32 48 const ];
+        %tmp.21 = invoke %tmp.17 %tmp.18(%tmp.20);
+        %tmp.22 = 200;
+        %tmp.23 = true;
+        invoke %tmp.15 %tmp.16(%tmp.21, %tmp.22, %tmp.23);
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_23_30_27_4_stop:
     }
-    [ @file = "/Users/jackhillman/source/garmin/Compass/compass/source/compassView.mc"; @line = 22; @symbol_functiondef = [onUpdate,22,13,21]; @symbol_param<0> = [dc,22,22,24]; @symbol_param<0>_type<0> = [Dc,22,28,30]; ]
+    [ @file = "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc"; @line = 29; @symbol_functiondef = [onSensorData,29,13,25]; @symbol_param<0> = [sensorInfo,29,26,36]; @symbol_param<0>_type<0> = [Sensor,29,40,46]; @symbol_param<0>_type<1> = [Info,29,47,51]; ]
+    function onSensorData(sensorInfo as Sensor.Info) as Void {
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_29_61_35_4_start:
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 30 8 ]
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_30_8_34_8_if_stmt:
+        %tmp.1 = lgetv %sensorInfo;
+        symbol [ sensorInfo %tmp.1 30 12 22 ];
+        symbol [ heading %tmp.2 30 23 30 ];
+        %tmp.2 = getv %tmp.1 :heading;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_30_8_34_8_if_end;
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_30_8_34_8_if_true:
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_30_39_34_8_start:
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 31 12 ]
+        %tmp.5 = true;
+        symbol [ headingAvailable ? 31 12 28 ];
+        putv self :headingAvailable %tmp.5;
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 32 12 ]
+        %tmp.6 = lgetv %sensorInfo;
+        symbol [ sensorInfo %tmp.6 32 36 46 ];
+        symbol [ heading %tmp.7 32 47 54 ];
+        %tmp.7 = getv %tmp.6 :heading;
+        %tmp.8 = 180.0;
+        %tmp.9 = mul %tmp.7 %tmp.8;
+        symbol [ Math %tmp.11 32 65 69 ];
+        %tmp.11 = getv ? :Math;
+        symbol [ PI %tmp.12 32 70 72 ];
+        %tmp.12 = getv %tmp.11 :PI;
+        %tmp.13 = div %tmp.9 %tmp.12;
+        symbol [ currentHeadingDegrees ? 32 12 33 ];
+        putv self :currentHeadingDegrees %tmp.13;
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 33 12 ]
+        %tmp.14 = self;
+        symbol [ updateHands %tmp.15 33 12 23 ];
+        %tmp.15 = getv function %tmp.14 :updateHands;
+        invoke %tmp.14 %tmp.15();
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_30_39_34_8_stop:
+        goto @_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_30_8_34_8_if_end;
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_30_8_34_8_if_end:
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_29_61_35_4_stop:
+    }
+    [ @file = "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc"; @line = 37; @symbol_functiondef = [checkSensorReady,37,13,29]; ]
+    function checkSensorReady() as Void {
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_37_40_51_4_start:
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 38 8 ]
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_38_8_41_8_if_stmt:
+        symbol [ headingAvailable %tmp.2 38 12 28 ];
+        %tmp.2 = getv ? :headingAvailable;
+        bf %tmp.2 @_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_38_8_41_8_if_end;
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_38_8_41_8_if_true:
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_38_30_41_8_start:
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 39 12 ]
+        symbol [ pollTimer %tmp.4 39 12 21 ];
+        %tmp.4 = getv ? :pollTimer;
+        symbol [ stop %tmp.5 39 22 26 ];
+        %tmp.5 = getv function %tmp.4 :stop;
+        invoke %tmp.4 %tmp.5();
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 40 12 ]
+        ret ?;
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_38_30_41_8_stop:
+        goto @_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_38_8_41_8_if_end;
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_38_8_41_8_if_end:
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 42 8 ]
+        [ "_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_37_40_51_4_start" "_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_37_40_51_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 42 12 16 ];
+        symbol [ Sensor %tmp.6 42 19 25 ];
+        %tmp.6 = getm $.Toybox.Sensor;
+        symbol [ getInfo %tmp.7 42 26 33 ];
+        %tmp.7 = getv function %tmp.6 :getInfo;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        lputv %info.1 %tmp.8;
+        symbol [ info %info.1 42 12 16 ];
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 43 8 ]
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_43_8_50_8_if_stmt:
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_43_12_43_44_begin:
+        %tmp.9 = lgetv %info.1;
+        symbol [ info %tmp.9 43 12 16 ];
+        %tmp.10 = null;
+        %tmp.11 = ne %tmp.9 %tmp.10;
+        bf %tmp.11 @_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_43_8_50_8_if_else_false;
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_43_28_43_44_true:
+        %tmp.12 = lgetv %info.1;
+        symbol [ info %tmp.12 43 28 32 ];
+        %tmp.13 = as %tmp.12 { (!Null) };
+        symbol [ heading %tmp.14 43 33 40 ];
+        %tmp.14 = getv %tmp.13 :heading;
+        %tmp.15 = null;
+        %tmp.16 = ne %tmp.14 %tmp.15;
+        push %tmp.16;
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_43_28_43_44_end:
+        %tmp.17 = phi [%tmp.11 @_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_43_12_43_44_begin] [%tmp.16 @_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_43_28_43_44_true] [%tmp.17 @_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_43_28_43_44_end];
+        bf %tmp.17 @_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_43_8_50_8_if_else_false;
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_43_8_50_8_if_true:
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_43_50_48_8_start:
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 44 12 ]
+        %tmp.18 = true;
+        symbol [ headingAvailable ? 44 12 28 ];
+        putv self :headingAvailable %tmp.18;
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 45 12 ]
+        %tmp.19 = lgetv %info.1;
+        symbol [ info %tmp.19 45 36 40 ];
+        %tmp.20 = as %tmp.19 { (!Null) };
+        symbol [ heading %tmp.21 45 41 48 ];
+        %tmp.21 = getv %tmp.20 :heading;
+        %tmp.22 = 180.0;
+        %tmp.23 = mul %tmp.21 %tmp.22;
+        symbol [ Math %tmp.25 45 59 63 ];
+        %tmp.25 = getv ? :Math;
+        symbol [ PI %tmp.26 45 64 66 ];
+        %tmp.26 = getv %tmp.25 :PI;
+        %tmp.27 = div %tmp.23 %tmp.26;
+        symbol [ currentHeadingDegrees ? 45 12 33 ];
+        putv self :currentHeadingDegrees %tmp.27;
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 46 12 ]
+        %tmp.28 = self;
+        symbol [ updateHands %tmp.29 46 12 23 ];
+        %tmp.29 = getv function %tmp.28 :updateHands;
+        invoke %tmp.28 %tmp.29();
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 47 12 ]
+        symbol [ pollTimer %tmp.31 47 12 21 ];
+        %tmp.31 = getv ? :pollTimer;
+        symbol [ stop %tmp.32 47 22 26 ];
+        %tmp.32 = getv function %tmp.31 :stop;
+        invoke %tmp.31 %tmp.32();
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_43_50_48_8_stop:
+        goto @_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_43_8_50_8_if_end;
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_43_8_50_8_if_else_false:
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_48_15_50_8_start:
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 49 12 ]
+        symbol [ System %tmp.34 49 12 18 ];
+        %tmp.34 = getv ? :System;
+        symbol [ println %tmp.35 49 19 26 ];
+        %tmp.35 = getv function %tmp.34 :println;
+        %tmp.36 = "Waiting for compass...";
+        invoke %tmp.34 %tmp.35(%tmp.36);
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_48_15_50_8_stop:
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_43_8_50_8_if_end:
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_37_40_51_4_stop:
+    }
+    [ @file = "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc"; @line = 54; @symbol_functiondef = [onUpdate,54,13,21]; @symbol_param<0> = [dc,54,22,24]; @symbol_param<0>_type<0> = [Dc,54,28,30]; ]
     function onUpdate(dc as Dc) as Void {
-_Users_jackhillman_source_garmin_Compass_compass_source_compassView_mc_22_40_25_4_start:
-[ "/Users/jackhillman/source/garmin/Compass/compass/source/compassView.mc" 24 8 ]
-        symbol [ View %tmp.2 24 8 12 ];
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_54_40_57_4_start:
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 56 8 ]
+        symbol [ View %tmp.2 56 8 12 ];
         %tmp.2 = getv ? :View;
-        symbol [ onUpdate %tmp.3 24 13 21 ];
+        symbol [ onUpdate %tmp.3 56 13 21 ];
         %tmp.3 = getv function %tmp.2 :onUpdate;
         %tmp.4 = lgetv %dc;
-        symbol [ dc %tmp.4 24 22 24 ];
+        symbol [ dc %tmp.4 56 22 24 ];
         invoke %tmp.2 %tmp.3(%tmp.4);
-_Users_jackhillman_source_garmin_Compass_compass_source_compassView_mc_22_40_25_4_stop:
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_54_40_57_4_stop:
     }
-    [ @file = "/Users/jackhillman/source/garmin/Compass/compass/source/compassView.mc"; @line = 30; @symbol_functiondef = [onHide,30,13,19]; ]
+    [ @file = "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc"; @line = 59; @symbol_functiondef = [updateHands,59,13,24]; ]
+    function updateHands() as Void {
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_59_35_66_4_start:
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 60 8 ]
+        %tmp.1 = self;
+        symbol [ setClockHandPosition %tmp.2 60 8 28 ];
+        %tmp.2 = getv function %tmp.1 :setClockHandPosition;
+        %tmp.3 = newd 2;
+        %tmp.5 = const :clockState;
+        symbol [ clockState %tmp.5 61 13 23 const ];
+        symbol [ WatchUi %tmp.6 61 27 34 ];
+        %tmp.6 = getm $.Toybox.WatchUi;
+        symbol [ ANALOG_CLOCK_STATE_HOLDING %tmp.7 61 35 61 ];
+        %tmp.7 = getv %tmp.6 :ANALOG_CLOCK_STATE_HOLDING;
+        %tmp.8 = dup %tmp.3;
+        %tmp.9 = aputv %tmp.8 %tmp.5 %tmp.7;
+        %tmp.11 = const :hour;
+        symbol [ hour %tmp.11 62 13 17 const ];
+        symbol [ currentHeadingDegrees %tmp.13 62 21 42 ];
+        %tmp.13 = getv ? :currentHeadingDegrees;
+        %tmp.14 = dup %tmp.9;
+        %tmp.15 = aputv %tmp.14 %tmp.11 %tmp.13;
+        invoke %tmp.1 %tmp.2(%tmp.15);
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 64 8 ]
+        symbol [ System %tmp.17 64 8 14 ];
+        %tmp.17 = getv ? :System;
+        symbol [ println %tmp.18 64 15 22 ];
+        %tmp.18 = getv function %tmp.17 :println;
+        %tmp.19 = "updating hand position";
+        invoke %tmp.17 %tmp.18(%tmp.19);
+[ "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc" 65 8 ]
+        symbol [ WatchUi %tmp.20 65 8 15 ];
+        %tmp.20 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.21 65 16 29 ];
+        %tmp.21 = getv function %tmp.20 :requestUpdate;
+        invoke %tmp.20 %tmp.21();
+_Users_jackhillman_source_garmin_garmin_compass_source_compassView_mc_59_35_66_4_stop:
+    }
+    [ @file = "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc"; @line = 71; @symbol_functiondef = [onHide,71,13,19]; ]
     function onHide() as Void {
     }
 }
-[ @file = "/Users/jackhillman/source/garmin/Compass/compass/source/compassView.mc"; @line = 1; ]
+[ @file = "/Users/jackhillman/source/garmin/garmin-compass/source/compassView.mc"; @line = 1; ]
 <init> {
 }
